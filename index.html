@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe & Restaurant | المنيو</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+             
+                <span class="logo-text">Q4 Cafe & Restaurant</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#products" class="nav-link">منتجاتنا</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="القائمة">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- القسم الترحيبي -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title" style="color:#315236; font-size: 46px;">انتعاش لا يُقاوم</h1>
+            <p class="hero-subtitle">أجود أنواع المشروبات الطازجة من <br> Q4 Cafe & Restaurant</p>
+            <br>
+            <br>
+            <a href="#products" class="btn-hero" style="color:#315236 ">تصفح المنيو</a>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div id="menuContainer"></div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="category-title">من نحن</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p> Q4 Cafe & Restaurant <br> هو أكثر من مجرد كافيه، إنه وجهة لعشاق الانتعاش والجودة. نحرص على اختيار أجود أنواع الفواكه والمكونات الطبيعية لنصنع مشروبات فريدة تنبض بالحياة.</p>
+                    <p>نؤمن بأن كل كوب يحكي قصة شغف، ولهذا نبتكر يومياً لنقدم لكم تجربة لا تُنسى مع كل رشفة.</p>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="داخل الكافيه">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تواصل معنا -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="category-title">تواصل معنا</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>ابقَ على تواصل</h3>
+                    <p>نحن سعداء للإجابة على استفساراتكم وملاحظاتكم. زورونا أو راسلونا عبر القنوات التالية.</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Syria Idlib</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>122 345 678 963+</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@caferestaurant.com.tr</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="الاسم الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="رسالتك" required ></textarea>
+                    </div>
+                    <button type="submit" class="btn-hero submit-btn" style="color:#315236;">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- زر العودة للأعلى -->
+    <button class="scroll-top" id="scrollTop"  aria-label="العودة للأعلى">↑</button>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 - جميع الحقوق محفوظة</p>
+            <p style="color:#315236;">برمجة: Ibrahim Mansour</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
